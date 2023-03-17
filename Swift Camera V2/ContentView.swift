@@ -38,11 +38,14 @@ struct ContentView: View {
                         self.displayPickerView = true 
                     }){
                         Image(systemName: "folder")
+                            .font(.title)
                     }
                     Button( action: {
-                        
+                        self.sourceType = .camera
+                        self.displayPickerView = true
                     }){
                         Image(systemName: "camera")
+                            .font(.title)
                     }
                 }
                 
